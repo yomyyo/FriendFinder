@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <!--CDN's for bootstrap styling, and JQuery-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!--These are the survey Questions-->
+    <h2>Survey Questions</h2>
+    <hr>
+
+    <h3><strong>About You</strong></h3>
+
+    <!--Name form-->
+    <h4>Name</h4>
+    <input name="point" type="text" id="name" class="form-control" required>
+
+    <!--Photo Link form, currently accepts any text, does not have to be a link-->
+    <h4>Photo Link</h4>
+    <input name="point" type="text" id="photo" class="form-control" required>
+
+    <hr>
+
+    <!--These are the questions, they are selected via Checkboxes-->
+
+    <!--CURRENTLY KNOWN BUG: YOU CAN CHECK MULTIPLE BOXES AT A TIME-->
+    <form>
+      <h3><strong>Question 1</strong></h3>
+      <h4>You believe that you are the best at what you do</h4>
+      <div class="form-check" id="q1">
+        <label> <input name="point" class="form-check-input" type="checkbox" value="1">1</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="2">2</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="3">3</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="4">4</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="5">5</label>
+      </div>
+
+      <h3><strong>Question 2</strong></h3>
+      <h4>You like to stay home more than go outdoors.</h4>
+      <div class="form-check" id="q2">
+        <label> <input name="point" class="form-check-input" type="checkbox" value="1">1</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="2">2</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="3">3</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="4">4</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="5">5</label>
+      </div>
+
+
+      <h3><strong>Question 3</strong></h3>
+      <h4>You take joy in looking at memes.</h4>
+      <div class="form-check" id="q3">
+        <label> <input name="point" class="form-check-input" type="checkbox" value="1">1</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="2">2</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="3">3</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="4">4</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="5">5</label>
+      </div>
+
+
+      <h3><strong>Question 4</strong></h3>
+      <h4>You like to try new things.</h4>
+      <div class="form-check" id="q4">
+        <label> <input name="point" class="form-check-input" type="checkbox" value="1">1</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="2">2</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="3">3</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="4">4</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="5">5</label>
+      </div>
+
+
+      <h3><strong>Question 5</strong></h3>
+      <h4>You want believe money can buy happiness.</h4>
+      <div class="form-check" id="q5">
+        <label> <input name="point" class="form-check-input" type="checkbox" value="1">1</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="2">2</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="3">3</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="4">4</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="5">5</label>
+      </div>
+
+
+      <h3><strong>Question 6</strong></h3>
+      <h4>You take the difficult path</h4>
+      <div class="form-check" id="q6">
+        <label> <input name="point" class="form-check-input" type="checkbox" value="1">1</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="2">2</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="3">3</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="4">4</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="5">5</label>
+      </div>
+
+
+      <h3><strong>Question 7</strong></h3>
+      <h4>You believe in realism more than idealism.</h4>
+      <div class="form-check" id="q7">
+        <label> <input name="point" class="form-check-input" type="checkbox" value="1">1</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="2">2</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="3">3</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="4">4</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="5">5</label>
+      </div>
+
+      <h3><strong>Question 8</strong></h3>
+      <h4>You believe you are right most of the time.</h4>
+      <div class="form-check" id="q8">
+        <label> <input name="point" class="form-check-input" type="checkbox" value="1">1</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="2">2</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="3">3</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="4">4</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="5">5</label>
+      </div>
+
+      <h3><strong>Question 9</strong></h3>
+      <h4>You like to partake in athletic activity.</h4>
+      <div class="form-check" id="q9">
+        <label> <input name="point" class="form-check-input" type="checkbox" value="1">1</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="2">2</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="3">3</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="4">4</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="5">5</label>
+      </div>
+
+      <h3><strong>Question 10</strong></h3>
+      <h4>You feel lonely being by yourself for too long.</h4>
+      <div class="form-check" id="q10">
+        <label> <input name="point" class="form-check-input" type="checkbox" value="1">1</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="2">2</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="3">3</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="4">4</label>
+        <label> <input name="point" class="form-check-input" type="checkbox" value="5">5</label>
+      </div>
+    </form>
+
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" Submit>Submit</button>
+
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/yomyyo/FriendFinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    // When you click the submit button
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+
+      // create a variable that will hold all the scores that the user gave
+      var score = [];
+
+      // loop through all the boxes checked and put their values into the score array
+      $.each($("input[name='point']:checked"),
+      function(){
+        score.push(parseInt($(this).val()));
+      });
+
+      // create an object that stores the values of all user inputs
+      var userData = {
+        name: $("#name").val(),
+        photo: $("#photo").val(),
+        scores: score
+      };
+
+      // Use AJAX to post the data into the friends API
+      $.post("/api/friends", userData, function(data) {
+
+        // Use the response from the data to put into the Modal
+        $("#match-name").text(data.name);
+        $("#match-img").attr("src", data.photo);
+
+        // Show the modal with the best match
+        $("#results-modal").modal("toggle");
+
+      });
+  });
+  </script>
+
+</body>
+
+</html>
