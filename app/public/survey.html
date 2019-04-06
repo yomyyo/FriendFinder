@@ -206,6 +206,8 @@
 
         // Use the response from the data to put into the Modal
         $("#match-name").text(data.name);
+
+        // CURRENT BUG, SOMETIMES PICTURE WILL OVERFLOW THE MODAL IF THE PICTURE SIZE IS TOO BIG
         $("#match-img").attr("src", data.photo);
 
         // Show the modal with the best match
